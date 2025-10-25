@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// 👇 ESTA ES LA CLAVE: usar rutas relativas
 export default defineConfig({
+  base: "./",
   plugins: [react()],
 })
